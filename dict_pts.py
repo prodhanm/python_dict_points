@@ -9,7 +9,7 @@ words = "Geschwindigkeitsbegrenzung"
 
 def dict_pts(points, words):
     point = 0
-    for char in words:
+    for char in words.lower():
         if char in points:
             point += points[char]
     return point
